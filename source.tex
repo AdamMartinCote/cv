@@ -1,0 +1,251 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.1 (8/1/17)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{multicol}
+\usepackage{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\profilepic{medias/adam_bigsquare3.jpg} % Profile picture
+
+\cvname{Adam \newpage Martin-Côté} % Your name
+\cvjobtitle{Software Developer} % Job title/career
+
+\cvdate{} % Date of birth
+\cvaddress{}
+% \cvaddress{Montréal, Canada} % Short address/location, use \newline if more than 1 line is required
+\cvnumberphone{+1 (514) 701-9200} % Phone number
+\cvsite{} % Personal website
+\cvmail{me@adammartincote.com} % Email address
+\cvgithub{\href{http://github.com/AdamMartinCote}{github.com/AdamMartinCote}}
+
+% url-encode unicode char to prevent the link from breaking
+\cvlinkedin{\href{https://www.linkedin.com/in/adam-martin-c\%C3\%B4t\%C3\%A9-0380b4126}{LinkedIn Profile}}
+
+%---------------------------------------------------------------------------------
+
+\begin{document}
+
+%---------------------------------------------------------------------------------
+%	 ABOUT ME
+%---------------------------------------------------------------------------------
+
+\aboutme{
+    \textbf{Full Stack} software developer with a Bachelor of \textbf{Computer Engineering}. 
+    
+    Developing web applications since 2018, 
+    I am passionate about software quality, 
+    automation and efficiency.
+    
+    Fluent in both \textbf{English} and \textbf{French}.
+}
+
+% To have no About Me section, just remove all the text and leave \aboutme{}
+
+%---------------------------------------------------------------------------------
+%	 SKILLS
+%---------------------------------------------------------------------------------
+
+% Skill bar section, each skill must have a value between 0 an 6 (float)
+\skills{
+{CI{\slash}CD/4},
+{AWS/4.5},
+{Javascript/6},
+{Python/6}}
+
+%------------------------------------------------
+
+% Skill text section, each skill must have a value between 0 an 6
+\skillstext{}
+
+%---------------------------------------------------------------------------------
+
+\makeprofile % Print the sidebar
+
+%---------------------------------------------------------------------------------
+%	 SUMMARY
+%---------------------------------------------------------------------------------
+
+% \section{Summary}
+% \vspace{0.1in}
+
+% \textbf{Full Stack} software developer with a Bachelor of \textbf{Computer Engineering}. 
+
+% I make great software from great ideas, using the best modern technologies to make things simple, robust and automated
+
+% \vspace{0.1in}
+
+
+
+% \vspace{0.05in}
+%---------------------------------------------------------------------------------
+%	 TECHNOLOGIES
+%---------------------------------------------------------------------------------
+\section{Technologies}
+
+\begin{tabular}{ p{4cm} p{4cm} p{5cm}}
+    \textbf{Languages} & \textbf{Frameworks} & \textbf{Infrastructure~and~Automation} \\
+    
+    \begin{itemize}
+      \item Python 
+      \item Javascript/Node
+      \item Typescript 
+      \item Bash 
+      \item Go
+      \item C 
+    \end{itemize}  &
+    \begin{itemize}
+      \item FastAPI
+      \item Django
+      \item Flask 
+      \item Serverless/SAM
+      \item Vue.js 
+      \item React 
+      \item Angular 2+ 
+    \end{itemize} &
+    \begin{itemize}
+      \item AWS 
+      \item CloudFormation 
+      \item Terraform
+      \item CodePipeline
+      \item CodeBuild
+      \item Elastic Beanstalk
+      \item ECS/Fargate
+      \item Pytest
+      \item Git 
+    \end{itemize} \\
+\end{tabular}
+
+\vspace{-0.9cm}
+
+%---------------------------------------------------------------------------------
+%	 EXPERIENCE
+%---------------------------------------------------------------------------------
+
+\section{Professional experiences}
+
+\begin{twenty} % Environment for a list with descriptions
+	\experience{May 2021}{present}{Self Employed}{Software Consultant}{
+	    \begin{itemize}
+            \item Acted as a \textbf{Technical lead} on a small team and drove the transition to a \textbf{DevOps} workflow
+            \item Addressed \textbf{basic security} concerns in infrastructure and applications
+            \item Rewrote a legacy application using \textbf{Python} and \textbf{FastAPI}
+            \item Used \textbf{AWS Lambda} to implement new features at no cost
+        \end{itemize}
+	}
+	\experience{Sept 2020}{June 2021}{Spiria}{Full Stack Developer}{
+	    \begin{itemize}
+	        \item Maintained and developed new functionalities on a legacy financial application built in \textbf{Flask} and \textbf{React} and deployed on \textbf{AWS}
+	    \end{itemize}
+	}
+	\experience{June 2020}{Sept 2020}{HalfSerious}{Full Stack Developer}{
+	    \begin{itemize}
+	        \item Developed a web application for mortgage document processing in \textbf{Angular2+} and \textbf{Python} on \textbf{Amazon Lambda}
+	    \end{itemize}
+	}
+	\experience{May 2019}{June 2020}{GoSecure}{Full Stack Developer}{
+	    \begin{itemize}
+	        \item Developed and maintained a Cyber Security Assessment portal written in \textbf{Django} and \textbf{Angular 2+}.
+	        \item Put a strong emphasis on code quality, \textbf{unit test} coverage and \textbf{Architecture}
+	    \end{itemize}
+	}
+	\experience{May 2018}{Sept 2018}{Bell Canada - IaaS team}{Software Development Intern}{
+	    \begin{itemize}
+	        \item Rebuilt a legacy PHP application using \textbf{Python} and \textbf{Django}
+	    \end{itemize}
+	}
+	\experience{May 2017}{Sept 2017}{Noviflow}{Software Development Intern}{
+	    \begin{itemize}
+	        \item Fixed bugs on a \textbf{Ansi C} networking application
+	        \item Used \textbf{Python} for integration and regression testing
+	    \end{itemize}
+	}
+    \experience{Jan 2017}{May 2018}{Polytechnique Montréal}{Teaching Assistant}{%
+	    \begin{itemize}
+	        \item Assisted students in the development of a \textbf{C++} application on a \textbf{Linux} microcontroller
+	    \end{itemize}
+    }
+\end{twenty}
+
+%----------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------
+
+% \section{Freelance Projects}
+
+% \vspace{0.1in}
+
+% \begin{twenty} % Environment for a list with descriptions
+% 	\twentyitem{2021-now}{Maxen Technologie}{}{
+% 	    Work part-time on the development of their building management platform written in \textbf{Django} and \textbf{Vue.js}
+% 	    \vspace{0.1cm}
+% 	}
+% 	\twentyitem{2019}{Qed Tutrix}{}{
+% 	    Deployed an existing \textbf{Django} application into production using \textbf{Docker} and \textbf{Docker-compose}.
+% 	    \vspace{0.1cm}
+% 	}
+% 	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+% \end{twenty}
+
+%----------------------------------------------------------------------------------
+%	 PROJECTS
+%----------------------------------------------------------------------------------
+
+% \newpage
+
+\section{Certifications}
+
+\vspace{0.1in}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2021}{%
+    	AWS Certified Developer - Associate%
+    	\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
+        	~\textnormal{[\textit{link}]}%
+    	}%
+	}{}{}
+	\twentyitem{2021}{%
+    	AWS Certified Cloud Practitioner%
+    	\href{https://www.credly.com/badges/8bf41cbb-0544-4beb-8cb5-1147988fadd4?source=linked_in_profile}{%
+        	~\textnormal{[\textit{link}]}%
+    	}%
+	}{}{}
+\end{twenty}
+%----------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------
+
+\section{Education}
+
+\vspace{0.1in}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem{2019}{Bachelor of engineering}{Polytechnique Montréal}{\emph{Computer Engineering}}
+\end{twenty}
+
+\end{document} 

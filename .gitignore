@@ -1,0 +1,10 @@
+*
+
+# Whitelist
+!source.tex
+!twentysecondcv.cls
+!medias/*
+!Makefile
+!latexmk
+!LICENSE
+!.gitignore
