@@ -3,7 +3,7 @@
 # Whitelist
 !source.tex
 !twentysecondcv.cls
-!media/*
+!media/
 !Makefile
 !latexmk
 !LICENSE
