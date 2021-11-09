@@ -24,6 +24,8 @@
 \usepackage[T1]{fontenc}
 \usepackage{multicol}
 \usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
 
 %----------------------------------------------------------------------------------------
 %	 PERSONAL INFORMATION
@@ -65,18 +67,16 @@
     Fluent in both \textbf{English} and \textbf{French}.
 }
 
-% To have no About Me section, just remove all the text and leave \aboutme{}
-
 %---------------------------------------------------------------------------------
 %	 SKILLS
 %---------------------------------------------------------------------------------
 
 % Skill bar section, each skill must have a value between 0 an 6 (float)
-\skills{
-{CI{\slash}CD/4},
-{AWS/4.5},
-{Javascript/6},
-{Python/6}}
+%\skills{
+%{CI{\slash}CD/4},
+%{AWS/4.5},
+%{Javascript/6},
+%{Python/6}}
 
 %------------------------------------------------
 
@@ -87,10 +87,10 @@
 
 \makeprofile % Print the sidebar
 
-
 %---------------------------------------------------------------------------------
 %	 TECHNOLOGIES
 %---------------------------------------------------------------------------------
+
 \section{Technologies}
 
 \begin{tabular}{ p{4cm} p{4cm} p{5cm}}
@@ -126,7 +126,7 @@
     \end{itemize} \\
 \end{tabular}
 
-\vspace{-0.9cm}
+\vspace{-0.5cm}
 
 %---------------------------------------------------------------------------------
 %	 EXPERIENCE
@@ -177,24 +177,24 @@
     }
 \end{twenty}
 
-\section{Certifications}
-
-\vspace{0.1in}
-
-\begin{twenty} % Environment for a list with descriptions
-	\twentyitem{2021}{%
-    	AWS Certified Developer - Associate%
-    	~\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
-        	\textnormal{[\textit{link}]}%
-    	}%
-	}{}{}
-	\twentyitem{2021}{%
-    	AWS Certified Cloud Practitioner%
-    	~\href{https://www.credly.com/badges/8bf41cbb-0544-4beb-8cb5-1147988fadd4?source=linked_in_profile}{%
-        	\textnormal{[\textit{link}]}%
-    	}%
-	}{}{}
-\end{twenty}
+%\section{Certifications}
+%
+%\vspace{0.1in}
+%
+%\begin{twenty} % Environment for a list with descriptions
+%	\twentyitem{2021}{%
+%    	AWS Certified Developer - Associate%
+%    	~\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
+%        	\textnormal{[\textit{link}]}%
+%    	}%
+%	}{}{}
+%	\twentyitem{2021}{%
+%    	AWS Certified Cloud Practitioner%
+%    	~\href{https://www.credly.com/badges/8bf41cbb-0544-4beb-8cb5-1147988fadd4?source=linked_in_profile}{%
+%        	\textnormal{[\textit{link}]}%
+%    	}%
+%	}{}{}
+%\end{twenty}
 
 %----------------------------------------------------------------------------------
 %	 EDUCATION
@@ -208,4 +208,17 @@
 	\twentyitem{2019}{Bachelor of engineering}{Polytechnique Montréal}{\emph{Computer Engineering}}
 \end{twenty}
 
+%----------------------------------------------------------------------------------
+%	 FOOTER
+%----------------------------------------------------------------------------------
+
+\pagestyle{fancy}
+\fancyhf{}% to clear existing header/footer if you don't want it
+\renewcommand\headrulewidth{0pt}
+
+\cfoot{%
+    \textsubscript{source code available at \href{%
+        https://github.com/AdamMartinCote/cv}{\underline{github.com/AdamMartinCote/cv}}%
+    }
+}
 \end{document} 

@@ -169,10 +169,27 @@
 
 		%------------------------------------------------
 
-		\profilesection{Skills}
+%		\profilesection{Skills}
+		\profilesection{Certifications}
 
-		\skills
-		\skillstext
+		\vspace{1cm}
+
+		\begin{center}
+			\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
+				\includegraphics[width=3.5cm]{media/AWS-Developer-Associate-2020.png}
+			}
+		\end{center}
+		\vspace{0.5cm}
+		\begin{center}
+			\href{https://www.credly.com/badges/c339751f-3aab-4ec1-b215-f70e3666c3b5/public_url}{%
+				\includegraphics[width=3.5cm]{media/AWS-CloudPractitioner-2020.png}
+			}
+		\end{center}
+
+%		\newcommand{\cert}[3]{}
+
+%		\skills
+%		\skillstext
 		\scriptsize
 % 		(*)[The skill scale is from 0 (Fundamental Awareness) to 6 (Expert).]
 			
@@ -185,7 +202,7 @@
 %	 COLOURED SECTION TITLE BOX
 %----------------------------------------------------------------------------------------
 
-% Command to create the rounded boxes around the first three letters of section titles
+% Command to create the rounded boxes around the first t letters of section titles
 \newcommand*\round[2]{%
 	\tikz[baseline=(char.base)]\node[anchor=north west, draw,rectangle, rounded corners, inner sep=4pt, minimum size=5.5mm, text height=3.9mm, fill=#2,#2,text=white](char){#1};%
 }
@@ -285,6 +302,6 @@
 %	 MARGINS AND LINKS
 %----------------------------------------------------------------------------------------
 
-\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,nofoot]{geometry}
+\RequirePackage[left=7.6cm,top=0.1cm,right=1cm,bottom=0.2cm,nohead,includefoot]{geometry}
 
 \RequirePackage{hyperref}
