@@ -112,6 +112,15 @@
 	}
 }
 
+%\newcommand\certs[1]{
+%	\renewcommand{\certs}{}
+%        \begin{flushleft}
+%            \foreach [count=\i] \x/\y in {#1}{
+%                \x$ \star $\y
+%            }
+%        \end{flushleft}
+%    }
+
 %----------------------------------------------------------------------------------------
 %	 SIDEBAR LAYOUT
 %----------------------------------------------------------------------------------------
@@ -186,7 +195,7 @@
 			}
 		\end{center}
 
-%		\newcommand{\cert}[3]{}
+%		\certs
 
 %		\skills
 %		\skillstext
