@@ -36,18 +36,18 @@
 \profilepic{media/profile-picture.jpg} % Profile picture
 
 \cvname{Adam \newpage Martin-Côté} % Your name
-\cvjobtitle{Software Developer} % Job title/career
+\cvjobtitle{} % Job title/career
 
 \cvdate{} % Date of birth
 \cvaddress{}
-% \cvaddress{Montréal, Canada} % Short address/location, use \newline if more than 1 line is required
-\cvnumberphone{+1 (514) 701-9200} % Phone number
+\cvnumberphone{} % Phone number
 \cvsite{} % Personal website
+
 \cvmail{me@adammartincote.com} % Email address
 \cvgithub{\href{http://github.com/AdamMartinCote}{github.com/AdamMartinCote}}
-
-% url-encode unicode char to prevent the link from breaking
-\cvlinkedin{\href{https://www.linkedin.com/in/adam-martin-c\%C3\%B4t\%C3\%A9-0380b4126}{LinkedIn Profile}}
+\cvlinkedin{
+    \href{https://www.linkedin.com/in/adammartincote}{linkedin.com/in/adammartincote}
+}
 
 %---------------------------------------------------------------------------------
 
@@ -58,13 +58,18 @@
 %---------------------------------------------------------------------------------
 
 \aboutme{
-    \textbf{Full Stack} software developer with a Bachelor of \textbf{Computer Engineering}. 
-    
-    Developing web applications since 2018, 
-    I am passionate about software quality, 
-    automation and efficiency.
-    
-    Fluent in both \textbf{English} and \textbf{French}.
+    \vspace{0.25cm}
+    \textbf{\large Senior Full Stack Developer}
+
+    Building robust and efficient Saas systems since 2018
+
+    I am passionate about \textbf{DevOps} and \textbf{Automation}
+
+    I work 100\% \textbf{remotely}
+
+    Fluent in both \textbf{English} and \textbf{French}
+
+    \vspace{0.25cm}
 }
 
 %---------------------------------------------------------------------------------
@@ -94,18 +99,19 @@
 %---------------------------------------------------------------------------------
 
 \section{Technologies}
+\vspace{0.20cm}
 
 \begin{tabular}{ p{4cm} p{4cm} p{5cm}}
     \textbf{Languages} & \textbf{Frameworks} & \textbf{Infrastructure~and~Automation} \\
     
     \begin{itemize}
       \item Python
-      \item Golang
-      \item Javascript/Node
+      \item Javascript/Node.js
       \item Typescript 
       \item Bash 
-      \item C
-    \end{itemize}  &
+      \item Golang
+      \item Java
+    \end{itemize} &
     \begin{itemize}
       \item Django
       \item FastAPI
@@ -118,14 +124,13 @@
     \begin{itemize}
       \item AWS
       \item Terraform
-      \item CloudFormation
       \item Docker
-      \item CodePipeline
+      \item Kubernetes
+      \item CloudFormation
       \item Gitlab CI
       \item Github Actions
-      \item Elastic Beanstalk
       \item Pytest
-      \item Git 
+      \item Git/GitOps
     \end{itemize} \\
 \end{tabular}
 
@@ -136,29 +141,41 @@
 %---------------------------------------------------------------------------------
 
 \section{Professional experiences}
+\vspace{0.20cm}
 
 \begin{twenty} % Environment for a list with descriptions
-	\experience{May 2021}{present}{9457-8499 Québec inc.}{Software Consultant/CEO}{
+	\experience{May 2021}{present}{Self-employed (Incorporated)}{Software Consultant/CEO}{
 	    \begin{itemize}
-            \item Acted as a \textbf{Technical lead} on a small team, leading code reviews and teaching \textbf{Test Driven Development}.
-            \item Greatly increased development speed and quality of the whole team by \textbf{automating} deployment and testing.
-            \item Used \textbf{AWS Lambda} to implement new features at no cost
+            \item Made major \textbf{performance} improvements on a legacy application by
+                optimizing data fetching and database queries
+            \item Increased the velocity and stability of developments for the whole team
+                by \textbf{automating} builds, testing and deployments
+            \item Acted as a \textbf{Technical lead} on a small team, teaching
+                \textbf{clean code} and \textbf{unit testing}
+            \item Reduced overall cloud costs by over 60\% by reducing waste, rightsizing
+                and leveraging \textbf{AWS Lambda} for new developments
+            \item Used \textbf{Terraform} to make existing \textbf{AWS} infrastructure visible
+                and provide a \textbf{disaster recovery} strategy
         \end{itemize}
 	}
 	\experience{Sept 2020}{June 2021}{Spiria}{Full Stack Developer}{
 	    \begin{itemize}
-	        \item Maintained and developed new functionalities on a legacy financial application built in \textbf{Flask} and \textbf{React} and deployed on \textbf{AWS}
-            \item Greatly reduced defects by implementing suites of automated tests
+	        \item Maintained and developed new functionalities on a legacy financial
+                application built in \textbf{Flask/Python} and \textbf{React/Javascript}
+            \item Greatly reduced defects frequency by implementing suites of
+                \textbf{automated tests}
 	    \end{itemize}
 	}
 	\experience{June 2020}{Sept 2020}{HalfSerious}{Full Stack Developer}{
 	    \begin{itemize}
-	        \item Developed a web application for mortgage document processing in \textbf{Angular2+} and \textbf{Python} on \textbf{Amazon Lambda}
+	        \item Developed a web application for mortgage document processing in
+                \textbf{Angular2+/Typescript} and \textbf{Python} on \textbf{AWS Lambda}
 	    \end{itemize}
 	}
 	\experience{May 2019}{June 2020}{GoSecure}{Full Stack Developer}{
 	    \begin{itemize}
-	        \item Developed and maintained a Cyber Security Assessment portal written in \textbf{Django} and \textbf{Angular 2+}.
+	        \item Developed and maintained a Cyber Security Assessment portal written in
+                \textbf{Django/Python} and \textbf{Angular 2+/Typescript}.
 	        \item Put a strong emphasis on code quality, \textbf{unit test} coverage and \textbf{Architecture}
 	    \end{itemize}
 	}
@@ -173,11 +190,11 @@
 	        \item Used \textbf{Python} for integration and regression testing
 	    \end{itemize}
 	}
-    \experience{Jan 2017}{May 2018}{Polytechnique Montréal}{Teaching Assistant}{%
-	    \begin{itemize}
-	        \item Assisted students in the development of a \textbf{C++} application on a \textbf{Linux} microcontroller
-	    \end{itemize}
-    }
+    %\experience{Jan 2017}{May 2018}{Polytechnique Montréal}{Teaching Assistant}{%
+	%    \begin{itemize}
+	%        \item Assisted students in the development of a \textbf{C++} application on a \textbf{Linux} microcontroller
+	%    \end{itemize}
+    %}
 \end{twenty}
 
 %\section{Certifications}
@@ -204,8 +221,7 @@
 %----------------------------------------------------------------------------------
 
 \section{Education}
-
-\vspace{0.1in}
+\vspace{0.20cm}
 
 \begin{twenty} % Environment for a list with descriptions
 	\twentyitem{2019}{Bachelor of engineering}{Polytechnique Montréal}{\emph{Computer Engineering}}

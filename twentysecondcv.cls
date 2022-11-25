@@ -161,6 +161,7 @@
 			\ifthenelse{\equal{\cvaddress}{}}{}{\textsc{\large\icon{\faHome}} & \cvaddress\\}
 			\ifthenelse{\equal{\cvnumberphone}{}}{}{\textsc{\large\icon{\faPhone}} & \cvnumberphone\\}
 			\ifthenelse{\equal{\cvsite}{}}{}{\textsc{\large\icon{\Mundus}} & \cvsite\\}
+
 			\ifthenelse{\equal{\cvgithub}{}}{}{\textsc{\large\icon{\faGithub}} & \cvgithub\\}
 			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\large\icon{\faLinkedin}} & \cvlinkedin\\}
 % 			\ifthenelse{\equal{\cvlinkedin}{}}{}{\textsc{\Large\icon{\faLinkedin}} & \href{\cvlinkedin}{LinkedIn}\\}
