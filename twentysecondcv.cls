@@ -185,13 +185,13 @@
 		\vspace{1cm}
 
 		\begin{center}
-			\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
+			\href{https://www.credly.com/badges/aa3ba48e-d23d-48e7-8441-2b121ace429c/public_url}{%
 				\includegraphics[width=2.5cm]{media/CKAD-icon}
 			}
 		\end{center}
 %		\vspace{0.5cm}
 		\begin{center}
-			\href{https://www.credly.com/badges/c339751f-3aab-4ec1-b215-f70e3666c3b5/public_url}{%
+			\href{https://www.credly.com/badges/5e36a7e3-023f-49ba-a863-204c68f26934/public_url}{%
 				\includegraphics[width=2.5cm]{media/AWS-Developer-Associate-2020.png}
 			}
 			\href{https://www.credly.com/badges/c339751f-3aab-4ec1-b215-f70e3666c3b5/public_url}{%
