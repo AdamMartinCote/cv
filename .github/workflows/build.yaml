@@ -1,0 +1,27 @@
+name: Build new CV Version
+on:
+  push:
+    branches: [main]
+jobs:
+  build_latex:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v2
+      - uses: xu-cheng/texlive-action/full@v1
+        with:
+          run: |
+            apk add make
+            make
+      - uses: ncipollo/release-action@v1
+        with:
+          artifacts: "*-cv-adam.pdf"
+          tag: "latest"
+          commit: "main"
+          makeLatest: true
+          allowUpdates: true
+          artifactErrorsFailBuild: true
+          omitBody: true
+          omitBodyDuringUpdate: true
+          omitName: true
