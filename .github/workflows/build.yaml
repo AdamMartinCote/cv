@@ -1,6 +1,7 @@
 name: Build new CV Version
 on:
-  push: ci
+  push:
+    branche: ci
 jobs:
   build_latex:
     runs-on: ubuntu-latest
