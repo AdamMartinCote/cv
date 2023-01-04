@@ -21,3 +21,5 @@ jobs:
         with:
           artifacts: "*-cv-adam.pdf"
           body: "TODO release body"
+          tag: "latest"
+          commit: "ci"
